@@ -34,7 +34,8 @@ app.use("/catalog", catalogRouter);
 
 //Integrating mongoDB
 const mongoose = require("mongoose");
-const mongoDB = process.env.MONGO_DB;
+const mongoDB =
+	"mongodb://mongo:DwwUnthE1w2aHAbe8P2m@containers-us-west-45.railway.app:6553";
 
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
